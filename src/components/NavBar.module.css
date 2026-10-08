@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background: #1f1f2e;
+}
+
+.brand {
+  color: #fff;
+  font-weight: bold;
+  margin-right: auto; /* pushes the links to the right */
+}
+
+.link {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* React Router adds the class "active" to the link of the current page.
+   :global() stops CSS Modules from renaming that class. */
+.link:global(.active) {
+  color: #fff;
+  border-bottom: 2px solid #e0a458;
+}

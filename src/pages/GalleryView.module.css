@@ -1,0 +1,84 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Department filter buttons */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: #1f1f2e;
+}
+
+/* Added to a chip when it is selected */
+.active {
+  background: #1f1f2e;
+  border-color: #1f1f2e;
+  color: #fff;
+}
+
+.clear {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background: none;
+  color: #a05a00;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.count {
+  color: #666;
+}
+
+/* The grid of pictures: as many 220px+ columns as fit on the screen */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: block;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  border-color: #1f1f2e;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* crop the picture to fill the box */
+  background: #eee;
+}
+
+.caption {
+  display: block;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.message {
+  padding: 2rem;
+  text-align: center;
+}

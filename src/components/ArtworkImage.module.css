@@ -1,0 +1,14 @@
+/* Shown when an artwork has no image */
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  background: #eee;
+  color: #666;
+}
+
+/* The preview image is tiny, so stretch it to fill the space */
+.preview {
+  width: 100%;
+}
